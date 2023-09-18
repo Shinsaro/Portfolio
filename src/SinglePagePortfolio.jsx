@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import Skills from "./Skills.jsx";
 import Introduccion from "./Introduccion.jsx";
 import Projects from "./Projects.jsx";
-import NavBarPortfolio from "./NavBarPortfolio.jsx";
+import NavBarPortfolio from "../src/NavbarPortfolio.jsx";
 
 function SinglePagePortfolio() {
   return (
