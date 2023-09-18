@@ -4,7 +4,7 @@ import Introduccion from "./Introduccion";
 import Projects from "./Projects";
 import { View } from "react-native-web";
 import { Col, Row } from "react-bootstrap";
-import NavBarPortfolio from "./NavBarPortfolio.jsx";
+import NavBarPortfolio from "./NavBarPortfolio";
 
 function SinglePagePortfolio() {
   return (
