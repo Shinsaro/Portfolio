@@ -1,10 +1,10 @@
 import React from "react";
-import Skills from "./Skills";
-import Introduccion from "./Introduccion";
-import Projects from "./Projects";
 import { View } from "react-native-web";
 import { Col, Row } from "react-bootstrap";
-import NavBarPortfolio from "./NavBarPortfolio";
+import Skills from "./Skills.jsx";
+import Introduccion from "./Introduccion.jsx";
+import Projects from "./Projects.jsx";
+import NavBarPortfolio from "./NavBarPortfolio.jsx";
 
 function SinglePagePortfolio() {
   return (
