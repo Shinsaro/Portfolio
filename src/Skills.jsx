@@ -3,12 +3,12 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import ReactLogo from "./logo192.png";
 import Badge from "react-bootstrap/Badge";
-import { Container } from "react-bootstrap";
+import { View } from "react-native-web";
 
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-  <div
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="1"
@@ -22,8 +22,8 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>React</p>
     <Badge bg="success">Principiante</Badge>
-  </div>,
-  <div
+  </View>,
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="2"
@@ -37,8 +37,8 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>NojeJS</p>
     <Badge bg="success">Principiante</Badge>
-  </div>,
-  <div
+  </View>,
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="3"
@@ -52,8 +52,8 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>C#</p>
     <Badge bg="success">Avanzado</Badge>
-  </div>,
-  <div
+  </View>,
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="4"
@@ -67,8 +67,8 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>HTML</p>
     <Badge bg="success">Intermedio</Badge>
-  </div>,
-  <div
+  </View>,
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="5"
@@ -82,8 +82,8 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>CSS</p>
     <Badge bg="success">Principiante</Badge>
-  </div>,
-  <div
+  </View>,
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="6"
@@ -97,8 +97,8 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>Bootstrap</p>
     <Badge bg="success">Intermedio</Badge>
-  </div>,
-  <div
+  </View>,
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="7"
@@ -112,8 +112,8 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>Karma</p>
     <Badge bg="success">Principiante</Badge>
-  </div>,
-  <div
+  </View>,
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="7"
@@ -127,8 +127,8 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>MongoDB</p>
     <Badge bg="success">Principiante</Badge>
-  </div>,
-  <div
+  </View>,
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="7"
@@ -142,8 +142,8 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>Github</p>
     <Badge bg="success">Intermedio</Badge>
-  </div>,
-  <div
+  </View>,
+  <View
     onDragStart={handleDragStart}
     className="item"
     data-value="7"
@@ -157,18 +157,24 @@ const items = [
     />
     <p style={{ fontSize: 30, textAlign: "center" }}>VS Code</p>
     <Badge bg="success">Intermedio</Badge>
-  </div>,
+  </View>,
 ];
 
 const responsive = {
   0: {
-    items: 5,
+    items: 3,
+  },
+  800: {
+    items: 7,
+  },
+  2000: {
+    items: 10,
   },
 };
 
 const Skills = () => {
   return (
-    <Container>
+    <View style={{ width: "100%" }}>
       <h1 style={{ textAlign: "center", marginBottom: 50 }}>Skills</h1>
       <AliceCarousel
         mouseTracking
@@ -182,7 +188,7 @@ const Skills = () => {
         disableDotsControls
         disableButtonsControls
       />
-    </Container>
+    </View>
   );
 };
 

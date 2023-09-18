@@ -13,7 +13,12 @@ function SinglePagePortfolio() {
         <Row>
           <NavBarPortfolio />
         </Row>
-        <Row style={{ marginLeft: 50, marginRight: 50, marginTop: 120 }}>
+        <Row
+          style={{ marginLeft: 50, marginRight: 50, marginTop: 120 }}
+          xs={2}
+          md={20}
+          xxl={20}
+        >
           <Introduccion />
         </Row>
         <Row style={{ marginLeft: 50, marginRight: 50 }}>
