@@ -10,6 +10,8 @@
   flex-wrap: wrap;
   column-gap: 15px;
   margin-bottom: 15px;
+  margin-left: 1.8rem;
+  margin-right: 0.5rem;
 }
 .titleSection {
   text-align: center;
@@ -42,7 +44,7 @@
 .cardPersonalized {
   perspective: 150rem;
   height: 25rem;
-  width: 100%;
+  width: 25rem;
   box-shadow: none;
   background: none;
 }
@@ -59,7 +61,7 @@
   backface-visibility: hidden;
   position: absolute;
   height: 25rem;
-  width: 100%;
+  width: 25rem;
   text-align: center;
   color: white;
 }
@@ -74,7 +76,33 @@
 
 @media screen and (max-width: 1700px) {
   .rowProjects {
-    column-gap: 15px;
+    gap: 15px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .cardPersonalized {
+    perspective: 150rem;
+    height: 15rem;
+    width: 15rem;
+    box-shadow: none;
+    background: none;
+  }
+
+  .icon {
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .card-side {
+    border-radius: 15px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    text-align: center;
+    color: white;
   }
 }
 
@@ -83,8 +111,32 @@
 @media screen and (max-width: 992px) {
   .rowProjects {
     gap: 10px;
-    margin-left: 0.5rem;
+    margin-left: 2.5rem;
     margin-right: 0.5rem;
+  }
+  .cardPersonalized {
+    perspective: 150rem;
+    height: 15rem;
+    width: 15rem;
+    box-shadow: none;
+    background: none;
+  }
+
+  .icon {
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .card-side {
+    border-radius: 15px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    text-align: center;
+    color: white;
   }
 }
 
