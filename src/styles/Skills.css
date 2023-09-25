@@ -1,7 +1,34 @@
-.alice-carousel {
-  margin-left: 25px;
-}
 .titleSection {
   justify-self: center;
   margin-bottom: 50;
+}
+
+.elementOfCarousel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.imageElement {
+  align-self: center;
+}
+
+.textElement {
+  font-size: 30;
+  font-weight: bold;
+  align-self: center;
+}
+.levelSkill {
+  width: 80%;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5rem;
+  text-align: center;
+  border-color: #000000;
+  background-color: #008000;
+  color: #ffffff;
+  font-weight: bold;
+  align-self: center;
 }
