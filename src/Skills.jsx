@@ -1,9 +1,10 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import ReactLogo from "./logo192.png";
+import ReactLogo from "./pictures/logo192.png";
 import Badge from "react-bootstrap/Badge";
 import { View } from "react-native-web";
+import "./styles/Skills.css";
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -162,6 +163,9 @@ const items = [
 
 const responsive = {
   0: {
+    items: 1,
+  },
+  400: {
     items: 3,
   },
   800: {
@@ -174,8 +178,8 @@ const responsive = {
 
 const Skills = () => {
   return (
-    <View style={{ width: "100%" }}>
-      <h1 style={{ textAlign: "center", marginBottom: 50 }}>Skills</h1>
+    <div>
+      <h1 className="titleSection">Skills</h1>
       <AliceCarousel
         mouseTracking
         items={items}
@@ -188,7 +192,7 @@ const Skills = () => {
         disableDotsControls
         disableButtonsControls
       />
-    </View>
+    </div>
   );
 };
 
